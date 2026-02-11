@@ -37,7 +37,6 @@ class ArccosSeriesTest {
         double y = ArccosSeries.acos(x);
         assertTrue(y >= 0.0 && y <= PI, "x=" + x + " y=" + y);
       } catch (UnsupportedOperationException e) {
-        // пока нет реализации — тесты будут падать, это ожидаемо
         throw e;
       }
     }

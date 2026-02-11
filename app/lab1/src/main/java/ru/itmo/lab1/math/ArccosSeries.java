@@ -31,15 +31,13 @@ public final class ArccosSeries {
     return HALF_PI - asinSeries(x);
   }
 
-  // asin(x) via power series with term recurrence
   private static double asinSeries(double x) {
-    double term = x;   // n=0 term
+    double term = x;
     double sum = term;
 
     double x2 = x * x;
 
     for (int n = 0; n < MAX_TERMS - 1; n++) {
-      // term_{n+1} = term_n * ((2n+1)^2 / ((2n+2)(2n+3))) * x^2
       double a = (2.0 * n + 1.0);
       double ratio = (a * a) / ((2.0 * n + 2.0) * (2.0 * n + 3.0));
       term *= ratio * x2;
