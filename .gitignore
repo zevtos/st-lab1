@@ -2,3 +2,4 @@ target/
 .idea/
 *.iml
 .DS_Store
+app/lab1/target/
