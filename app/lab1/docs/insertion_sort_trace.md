@@ -24,3 +24,7 @@ Trace: OUTER, WHILE_TRUE, SHIFT, INSERT, OUTER, WHILE_FALSE, INSERT
 
 F) [-1,3,0,-1]  
 Trace: OUTER, WHILE_FALSE, INSERT, OUTER, WHILE_TRUE, SHIFT, INSERT, OUTER, WHILE_TRUE, SHIFT, WHILE_TRUE, SHIFT, INSERT
+
+Реализация: ru.itmo.lab1.sort.InsertionSort#sortWithTrace(int[]) возвращает List<TracePoint>.
+Точки трассы заданы в enum ru.itmo.lab1.sort.TracePoint.
+
